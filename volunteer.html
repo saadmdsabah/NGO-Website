@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer Form - HopeBridge</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/volunteer.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">HopeBridge</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="volunteer.html">Volunteer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5 my-5">
+      <div class="container">
+        <div class="mx-auto" style="max-width: 960px">
+          <div class="row shadow rounded overflow-hidden bg-white">
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center text-white p-5 bg-volunteer-img"
+            >
+              <div class="text-center">
+                <h2 class="mb-4">Be the Change</h2>
+                <p class="px-3">
+                  Volunteer your time, skills, and heart to empower communities.
+                  Your small step can make a big difference.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Panel with Form -->
+            <div class="col-md-6 p-5">
+              <h3 class="mb-4 text-center">Join as a Volunteer</h3>
+              <form id="volunteerForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" required />
+                </div>
+                <div class="mb-3">
+                  <label for="interest" class="form-label"
+                    >Area of Interest</label
+                  >
+                  <select class="form-select" id="interest" required>
+                    <option value="">Choose...</option>
+                    <option>Teaching</option>
+                    <option>Fundraising</option>
+                    <option>Medical Help</option>
+                    <option>Community Development</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="availability" class="form-label"
+                    >Availability (hours/week)</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="availability"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  Submit
+                </button>
+                <div
+                  id="thankYouMsg"
+                  class="alert alert-success mt-3 d-none text-center"
+                >
+                  Thank you for signing up! We'll contact you soon.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; 2025 HopeBridge. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
